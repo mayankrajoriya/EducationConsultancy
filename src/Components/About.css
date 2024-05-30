@@ -1,0 +1,142 @@
+
+
+.about {
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+   gray;
+  
+  width: 100%;
+  min-height: 30vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.about-text{
+    max-width: 300px;
+    text-align: center;
+    color: aliceblue;
+    border-bottom: 2px solid;
+}
+
+.about-1{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.about-1-text{
+    width: 700px;
+}
+.about-1-text h2{
+    font-size: 90px;
+}
+.about-1 img{
+    width: 600px;
+}
+
+.about-2{
+    display: flex;
+    justify-content: center;
+    margin-top:50px ;
+}
+
+.about-2-section-1{
+    width:700px;
+
+    background: linear-gradient(-45deg, #23a5d5cb, #f1e6e6, #17b61993, #25aa63);
+    background-size: 500% 500%;
+    animation: gradient 10s ease infinite;
+     display: flex;
+    flex-direction: column;
+    
+    padding: 75px;
+
+}
+.about-2 img{
+    width: 500px;
+    height: 333.5px;
+    margin-bottom: 50px;
+   
+}
+
+.about-2-section-2{
+    width:700px;
+    display: flex;
+    flex-direction: column;
+    padding: 75px;
+    background: linear-gradient(45deg, #23a5d5cb, #f1e6e6, #17b61993, #25aa63);
+    background-size: 500% 500%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+0% {
+  background-position: 0 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0 50%;
+}
+}
+
+
+.about-3{
+    margin-top: 30px;
+}
+
+
+@media (max-width:480px) {
+    .about-1{
+        flex-wrap: wrap;
+    }
+
+    .about-1 img{
+        width: 350px;
+    }
+    .about-1-text h2{
+        font-size: 50px;
+    }
+
+    .about-2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .about-2-section-1{
+     width: 350px;
+     margin: 0;padding: 30px;
+     display: flex;
+     align-items: center;
+    }
+
+    .about-2-section-1 img{
+       width: 300px;
+       height: 200px;
+
+       
+    }
+    .about-2-section-1-text{
+        width: 300px;
+        padding: 0;
+    }
+    .about-2-section-2{
+     width: 350px;
+     margin: 0;padding: 30px;
+     display: flex;
+     align-items: center;
+    }
+
+    .about-2-section-2 img{
+       width: 300px;
+       height: 200px;
+
+       
+    }
+    .about-2-section-2-text{
+        width: 300px;
+        padding: 0;
+    }
+}

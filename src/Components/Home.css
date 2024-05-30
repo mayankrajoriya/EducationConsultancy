@@ -1,0 +1,150 @@
+.home {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/bg-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.btn{
+  width: 200px;
+}
+
+.home-text {
+    max-width: 800px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.home-text h1 {
+  color:  #0075c5;
+  font-weight: 600;
+  font-size: 60px;
+}
+
+.home-text p {
+  max-width: 700px;
+  margin: 10px auto 20px;
+  line-height: 1.4;
+}
+
+.home-2 h2 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-body {
+  width: 500px;
+  height: 300px;
+  margin: 50px;
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-1:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/expert.jpeg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.card-2:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/support.jpeg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.card-3:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/scholarship.jpeg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.home-3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.home-3-content {
+  width: 550px;
+  padding: 30px;
+  background: linear-gradient(-45deg, #23a5d5cb, #000, #e6a53593, #000);
+  background-size: 500% 500%;
+  animation: gradient 10s ease infinite;
+  border-radius: 20px;
+  color: white;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.home-3 h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.home-3 img{
+ border-radius: 20px;
+ width: 550px;
+}
+
+.home-4{
+margin-top: 50px;
+}
+
+
+@media (max-width:480px) {
+  .home-text h1{
+    font-size:20px;
+    font-weight: 600;
+  } 
+
+  .home-text p{
+    font-size:10px;
+
+  }
+  .cards{
+    flex-wrap: wrap;
+  }
+  .card-body{
+    height: 320px;
+  }
+
+  .home-3-content{
+    width: 400px;
+
+  }
+     .home-3 img{
+      width: 350px;
+     }
+    .home-3-content{
+      margin-bottom: 30px;
+    }
+}
